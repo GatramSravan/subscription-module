@@ -1,0 +1,168 @@
+body{
+    background-color: #ffc932;
+    margin: 0 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    margin-top: 1rem !important;
+}
+.fly-container{
+    transform: rotate(-50deg);
+    top: 1rem;
+    left: -9rem;
+    right: 50rem;
+    width: 7vw;
+    height: 3vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color:  #ffc932;
+}
+.fly{   
+    font-size: 17px;
+    align-items: center;
+    font-weight: 600;
+    width: 10vw;
+}
+
+.break{
+    border: grey;
+    height: 1%;
+}
+
+.cards-container{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction :row;
+    gap: 3em;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23vw;
+}
+
+.card h2{
+    margin: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+hr{
+    color: #fbfbfb;
+    width: 18vw;
+    height: 1px;
+    margin-bottom: 2rem;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    background-color: #f3faff;
+    height: 18vh;
+    width: 17vw;
+}
+.black{
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+.payment h3,p{
+    margin: 0;
+}
+.tag{
+    color: #3f3cf8;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.payment h3{
+    margin-top: 0.3em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.overlay{
+    position: relative;
+    bottom: 0.4rem;
+    font-size: 30px;
+    right: 4px;
+    font-weight: 900;
+}
+
+.rate{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.info{
+    margin: 3rem;
+    height: 35vh;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    word-spacing: 1px;
+}
+.know-button{
+    position: relative;
+    margin: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4368e4;
+    
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin:0;
+        margin-bottom: 1rem;
+    }
+    .cards-container{
+        margin-top:0 ;
+        overflow-x: scroll;
+        gap: 0;
+    }
+
+    .cards-container::-webkit-scrollbar {
+        display: none;
+      }
+    .fly-container{
+        display: none;
+    }
+    .card{
+        padding: 1rem;
+        width: 120vw;
+    }
+    .card h2, .heading{
+        margin: 1rem;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+    hr{
+        width: 80vw;
+    }
+    .info{
+        margin-top: 3rem;
+        margin: 0 1.5rem;
+        width: 80vw;
+        font-size: 1rem;
+    }
+    .payment{
+        margin-bottom: 4rem;
+        width: 80vw;
+    }
+    
+
+
+}
+
+
+
