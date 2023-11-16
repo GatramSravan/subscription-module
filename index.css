@@ -65,8 +65,11 @@ hr{
     flex-direction: column;
     gap: 0.5em;
     align-items: center;
+    justify-content: center;
     background-color: #f3faff;
-    height: 18vh;
+    height: fit-content;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     width: 17vw;
 }
 .black{
